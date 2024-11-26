@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "j9O89nDCOw6s2Hyaok7s5vif+89OUq9RM9HcHA8jcx0=",
+  "Source": "learning-app-backend",
+  "BasePath": "_content/learning-app-backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
