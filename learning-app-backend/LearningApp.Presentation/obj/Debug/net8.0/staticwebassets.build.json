@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "rhc3Jo8DiIZfnzDAbs3gzgAG5LKd9rlSuM8x4toTvbA=",
+  "Source": "LearningApp.Presentation",
+  "BasePath": "_content/LearningApp.Presentation",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

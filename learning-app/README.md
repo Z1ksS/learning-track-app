@@ -1,14 +1,10 @@
 # learning-app
 
-This template should help get you started developing with Vue 3 in Vite.
+Цей проєкт є фронтенд реалізацією застосунку для відстежування власного прогресу, 
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar).
 
 ## Project Setup
 
