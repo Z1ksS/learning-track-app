@@ -7,11 +7,14 @@
       "RelativeMoniker": "D:0:0:{B1C71533-DF93-49B8-8E18-9FC2278A9D48}|LearningApp.Presentation.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1C71533-DF93-49B8-8E18-9FC2278A9D48}|LearningApp.Presentation.csproj|c:\\users\\heorhii\\desktop\\learning_app\\learning-app-backend\\learningapp.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1C71533-DF93-49B8-8E18-9FC2278A9D48}|LearningApp.Presentation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0E049AE-BFD2-4708-96DC-0E1BB817DC60}|..\\LearningApp.Business\\LearningApp.Business.csproj|c:\\users\\heorhii\\desktop\\learning_app\\learning-app-backend\\learningapp.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0E049AE-BFD2-4708-96DC-0E1BB817DC60}|..\\LearningApp.Business\\LearningApp.Business.csproj|c:\\users\\heorhii\\desktop\\learning_app\\learning-app-backend\\learningapp.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDEABDA5-D687-45C8-B5F5-48D54C3A8524}|..\\LearningApp.Data\\LearningApp.Data.csproj|c:\\users\\heorhii\\desktop\\learning_app\\learning-app-backend\\learningapp.data\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1C71533-DF93-49B8-8E18-9FC2278A9D48}|LearningApp.Presentation.csproj|c:\\users\\heorhii\\desktop\\learning_app\\learning-app-backend\\learningapp.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1C71533-DF93-49B8-8E18-9FC2278A9D48}|LearningApp.Presentation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +24,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -93,26 +96,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Data\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "..\\LearningApp.Data\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Data\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "..\\LearningApp.Data\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T21:54:49.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Presentation\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Presentation\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAlwDwAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAADwAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T21:46:17.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Business\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "..\\LearningApp.Business\\Services\\UserService.cs",
               "ToolTip": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Business\\Services\\UserService.cs",
               "RelativeToolTip": "..\\LearningApp.Business\\Services\\UserService.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwDIAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAgwGcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T21:29:59.569Z",
               "EditorCaption": ""
@@ -125,7 +141,7 @@
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Presentation\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAowA8AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwGQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T13:11:20.836Z",
               "EditorCaption": ""

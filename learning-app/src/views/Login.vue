@@ -17,9 +17,10 @@
   <script>
   import {reactive} from 'vue';
   import {useRouter} from "vue-router";
+  import { useAuthStore } from '@/store/authStore';
   
   export default {
-    name: "Register",
+    name: "Login",
     setup() {
       const data = reactive({
         name: '',
@@ -28,12 +29,13 @@
       });
   
       const router = useRouter();
+      const authStore = useAuthStore();
   
       const errorMessage = reactive({ value: '' });
   
       const submit = async () => {
         try {
-          const response = await fetch('https://localhost:7059/api/User/register', {
+          const response = await fetch('https://localhost:7059/api/User/login', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(data)
@@ -48,8 +50,10 @@
             }
             return;
           }
-  
-          await router.push('/login');
+
+          const token = await response.text();
+          authStore.login(token);
+          router.push('/'); 
         } catch (error) {
           errorMessage.value = 'An error occurred while connecting to the server.';
           console.error(error);
