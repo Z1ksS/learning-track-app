@@ -1,4 +1,6 @@
-﻿namespace LearningApp.Data.Entities;
+﻿using LearningApp.Data.Entities.UserData;
+
+namespace LearningApp.Data.Entities;
 
 public class Recommendation
 {

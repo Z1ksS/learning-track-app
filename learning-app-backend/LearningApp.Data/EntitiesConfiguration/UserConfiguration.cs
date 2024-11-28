@@ -1,4 +1,4 @@
-﻿using LearningApp.Data.Entities;
+﻿using LearningApp.Data.Entities.UserData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

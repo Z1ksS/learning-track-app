@@ -1,4 +1,4 @@
-﻿namespace LearningApp.Data.Entities;
+﻿namespace LearningApp.Data.Entities.UserData;
 
 public class User
 {
@@ -7,6 +7,7 @@ public class User
 	public string Email { get; set; }
 	public string PasswordHash { get; set; }
 	public string Role { get; set; }
-	public string Preferences { get; set; }
 	public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+	public ICollection<UserPreference> UserPreferences { get; set; }
 }

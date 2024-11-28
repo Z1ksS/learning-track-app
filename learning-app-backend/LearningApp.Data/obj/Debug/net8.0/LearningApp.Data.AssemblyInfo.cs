@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LearningApp.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9da1f15773108511672ee678d94573caec16cc0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75ca6a252bb23a6af660ce8488f2fe1c1326a404")]
 [assembly: System.Reflection.AssemblyProductAttribute("LearningApp.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LearningApp.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
