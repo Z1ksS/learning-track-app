@@ -20,7 +20,7 @@ public class UserController : ControllerBase
 		_userService = userService;
 	}
 
-	[HttpPost]
+	[HttpPost("register")]
 	[ProducesResponseType(typeof(bool), StatusCodes.Status200OK)]
 	[ProducesResponseType(StatusCodes.Status400BadRequest)]
 	public async Task<IActionResult> RegisterUser(UserPresentation user)

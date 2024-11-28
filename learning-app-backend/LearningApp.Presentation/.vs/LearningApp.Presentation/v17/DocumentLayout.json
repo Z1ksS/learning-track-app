@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Presentation\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B1C71533-DF93-49B8-8E18-9FC2278A9D48}|LearningApp.Presentation.csproj|c:\\users\\heorhii\\desktop\\learning_app\\learning-app-backend\\learningapp.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1C71533-DF93-49B8-8E18-9FC2278A9D48}|LearningApp.Presentation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B1C71533-DF93-49B8-8E18-9FC2278A9D48}|LearningApp.Presentation.csproj|c:\\users\\heorhii\\desktop\\learning_app\\learning-app-backend\\learningapp.presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1C71533-DF93-49B8-8E18-9FC2278A9D48}|LearningApp.Presentation.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -87,15 +91,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Presentation\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T15:00:24.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Presentation\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Presentation\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAwCsAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T13:11:20.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T13:11:20.836Z"
             }
           ]
         },
