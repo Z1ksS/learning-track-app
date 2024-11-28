@@ -7,4 +7,6 @@ namespace LearningApp.Business.Interfaces;
 public interface IUserService
 {
 	Task<Result<bool, ApplicationError>> RegisterUser(UserDto user);
-}
+	Task<Result<string, ApplicationError>> Login(string email,  string password);
+	Task<List<UserShortDto>> GetUsers();
+ }

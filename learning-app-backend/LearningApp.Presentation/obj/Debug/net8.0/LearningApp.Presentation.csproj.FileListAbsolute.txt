@@ -151,3 +151,4 @@ C:\Users\Heorhii\Desktop\learning_app\learning-app-backend\LearningApp.Presentat
 C:\Users\Heorhii\Desktop\learning_app\learning-app-backend\LearningApp.Presentation\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\Heorhii\Desktop\learning_app\learning-app-backend\LearningApp.Presentation\bin\Debug\net8.0\LearningApp.Business.dll
 C:\Users\Heorhii\Desktop\learning_app\learning-app-backend\LearningApp.Presentation\bin\Debug\net8.0\LearningApp.Business.pdb
+C:\Users\Heorhii\Desktop\learning_app\learning-app-backend\LearningApp.Presentation\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

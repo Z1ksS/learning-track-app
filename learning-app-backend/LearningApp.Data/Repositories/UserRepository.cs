@@ -18,6 +18,13 @@ public class UserRepository : IUserRepository
 		await _learningAppDbContext.SaveChangesAsync();
 	}
 
+	public async Task<IEnumerable<User>> GetAllAsync()
+	{
+		var users = await _learningAppDbContext.Users.ToListAsync();
+
+		return users;
+	}
+
 	public async Task<User?> GetByEmail(string email)
 	{
 		var user = await _learningAppDbContext.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Email == email);
