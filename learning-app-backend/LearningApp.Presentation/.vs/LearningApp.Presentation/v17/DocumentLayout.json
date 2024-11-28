@@ -3,7 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Presentation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BDEABDA5-D687-45C8-B5F5-48D54C3A8524}|..\\LearningApp.Data\\LearningApp.Data.csproj|c:\\users\\heorhii\\desktop\\learning_app\\learning-app-backend\\learningapp.data\\learningappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1C71533-DF93-49B8-8E18-9FC2278A9D48}|LearningApp.Presentation.csproj|c:\\users\\heorhii\\desktop\\learning_app\\learning-app-backend\\learningapp.presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1C71533-DF93-49B8-8E18-9FC2278A9D48}|LearningApp.Presentation.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,14 +87,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LearningAppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Data\\LearningAppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\LearningApp.Data\\LearningAppDbContext.cs",
-              "ToolTip": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Data\\LearningAppDbContext.cs",
-              "RelativeToolTip": "..\\LearningApp.Data\\LearningAppDbContext.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA9wAsAAAAzAAAAAAAAAA==",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Presentation\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Heorhii\\Desktop\\learning_app\\learning-app-backend\\LearningApp.Presentation\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwCsAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T21:54:03.161Z",
+              "WhenOpened": "2024-11-28T13:11:20.836Z",
               "EditorCaption": ""
             }
           ]

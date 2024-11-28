@@ -148,3 +148,6 @@ C:\Users\Heorhii\Desktop\learning_app\learning-app-backend\LearningApp.Presentat
 C:\Users\Heorhii\Desktop\learning_app\learning-app-backend\LearningApp.Presentation\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Heorhii\Desktop\learning_app\learning-app-backend\LearningApp.Presentation\bin\Debug\net8.0\LearningApp.Data.dll
 C:\Users\Heorhii\Desktop\learning_app\learning-app-backend\LearningApp.Presentation\bin\Debug\net8.0\LearningApp.Data.pdb
+C:\Users\Heorhii\Desktop\learning_app\learning-app-backend\LearningApp.Presentation\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Heorhii\Desktop\learning_app\learning-app-backend\LearningApp.Presentation\bin\Debug\net8.0\LearningApp.Business.dll
+C:\Users\Heorhii\Desktop\learning_app\learning-app-backend\LearningApp.Presentation\bin\Debug\net8.0\LearningApp.Business.pdb

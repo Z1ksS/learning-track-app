@@ -12,6 +12,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningApp.Data", "..\LearningApp.Data\LearningApp.Data.csproj", "{BDEABDA5-D687-45C8-B5F5-48D54C3A8524}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningApp.Business", "..\LearningApp.Business\LearningApp.Business.csproj", "{F0E049AE-BFD2-4708-96DC-0E1BB817DC60}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BDEABDA5-D687-45C8-B5F5-48D54C3A8524} = {BDEABDA5-D687-45C8-B5F5-48D54C3A8524}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
