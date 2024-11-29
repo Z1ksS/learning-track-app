@@ -32,3 +32,17 @@ docker build -t learning-app .
 ```sh
 docker run -it -p 8080:8080 --rm --name dockerize-vuejs-app-1 learning-app
 ```
+
+Демо проєкту:
+
+1. Реєстрація користувача:
+![](videos/register.gif)
+
+2. Авторизація користувача(з збереженням токену у local storage)
+![](videos/login.gif)
+
+3. Профіль звичайного користувача
+![](videos/profile.gif)
+
+4. CRUD для адміністратора для редагування, видалення, просмотру користувачів
+![](videos/profile.gif)
