@@ -34,7 +34,7 @@ docker run -it -p 8081:8081 learning-app-backend
 Демо проєкту:
 
 1. /api/User/register для реєстрації користувача(включаючи валідацію пошти, перевірки на помилки):
-![](videos/backend/login.mp4)
+![](videos/backend/login.gif)
 
 2. /api/User/login для авторизації користувача(валідацая паролю). Повертається JWT токен, який може бути потім записан в local storage, в випадку с Swagger - записується в cookies:
 <video controls src="https://i.imgur.com/5EuTMfh.mp4" title="[Download video](https://i.imgur.com/5EuTMfh.mp4)"></video>
