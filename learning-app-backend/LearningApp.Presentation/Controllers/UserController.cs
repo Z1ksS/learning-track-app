@@ -152,11 +152,22 @@ public class UserController : ControllerBase
 	}
 
 	[HttpPatch("updateUser")]
-	[Authorize(Policy = "AdminPolicy")]
+	[Authorize]
 	[ProducesResponseType(typeof(UserFullPresentation), StatusCodes.Status200OK)]
 	[ProducesResponseType(StatusCodes.Status404NotFound)]
 	public async Task<IActionResult> UpdateUser(string email, UserFullPresentation user)
 	{
+		var roleFromToken = User.Claims.FirstOrDefault(c =>
+			c.Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/role")?.Value;
+
+		var emailFromToken = User.Claims.FirstOrDefault(c =>
+			c.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name")?.Value;
+
+		if (roleFromToken != "Admin" && !emailFromToken.Equals(email, StringComparison.OrdinalIgnoreCase))
+		{
+			return StatusCode(StatusCodes.Status403Forbidden, "Ви не можете оновити дані цього користувача");
+		}
+
 		var userDto = new UserDto
 		{
 			Email = user.Email,

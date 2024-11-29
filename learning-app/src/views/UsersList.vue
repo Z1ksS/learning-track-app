@@ -68,18 +68,18 @@ export default {
         const fetchUsers = async () => {
             try {
                 const response = await fetch('https://localhost:7059/api/User/getUsers', {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json',
-                    Authorization: `Bearer ${localStorage.getItem('token')}`, // Додаємо токен
-                },
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        Authorization: `Bearer ${localStorage.getItem('token')}`, // Додаємо токен
+                    },
                 });
 
                 if (response.ok) {
-                const data = await response.json();
-                users.push(...data);
+                    const data = await response.json();
+                    users.push(...data);
                 } else {
-                console.error('Failed to fetch users');
+                    console.error('Failed to fetch users');
                 }
             } catch (error) {
                 console.error('Error:', error);
