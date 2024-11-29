@@ -34,20 +34,20 @@ docker run -it -p 8081:8081 learning-app-backend
 Демо проєкту:
 
 1. /api/User/register для реєстрації користувача(включаючи валідацію пошти, перевірки на помилки):
-![](videos/backend/login.gif)
+![](videos/backend/register.gif)
 
 2. /api/User/login для авторизації користувача(валідацая паролю). Повертається JWT токен, який може бути потім записан в local storage, в випадку с Swagger - записується в cookies:
-<video controls src="https://i.imgur.com/5EuTMfh.mp4" title="[Download video](https://i.imgur.com/5EuTMfh.mp4)"></video>
+![](videos/backend/login.gif)
 
 3. /api/User/getUserByEmail з отриманням даних користувача(включаючи перевірку на те, що авторизований користувач запрошує інформацію про себе):
-<video controls src="https://i.imgur.com/5BJuNeC.mp4" title="[Download video](https://i.imgur.com/5EuTMfh.mp4)"></video>
+![](videos/backend/getuser.gif)
 
 4. /api/User/getUsers для отримання даних про усіх користувачів у вигляді списку. Для даного ендпоінту є доступ тільки у користувачей з правами адміністратору. Якщо звичайний користувач намагається зробити запит:
-<video controls src="https://i.imgur.com/1AUNyEf.mp4" title="[Download video](https://i.imgur.com/1AUNyEf.mp4)"></video> Якщо авторизуватися як адміністратор:
-<video controls src="https://i.imgur.com/Fph7FAU.mp4" title="[Download video](https://i.imgur.com/Fph7FAU.mp4)"></video>
+![](videos/backend/getallunauth.gif) Якщо авторизуватися як адміністратор:
+![](videos/backend/getallauth.gif)
 
 5. /api/User/update для оновлення інформації про користувача(доступно тільки адміну або авторизованому користувачу).
-<video controls src="https://i.imgur.com/vvFf84v.mp4" title="[Download video](https://i.imgur.com/vvFf84v.mp4)"></video>
+![](videos/backend/update.gif)
 
-6. /api/User/delete для оновлення інформації про користувача(доступно тільки адміну).
-<video controls src="https://i.imgur.com/TaVoEKD.mp4" title="[Download video](https://i.imgur.com/TaVoEKD.mp4)"></video>
+6. /api/User/delete для видалення інформації про користувача(доступно тільки адміну).
+![](videos/backend/delete.gif)
