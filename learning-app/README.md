@@ -45,4 +45,4 @@ docker run -it -p 8080:8080 --rm --name dockerize-vuejs-app-1 learning-app
 ![](videos/profile.gif)
 
 4. CRUD для адміністратора для редагування, видалення, просмотру користувачів
-![](videos/profile.gif)
+![](videos/deleteupdate.gif.gif)
