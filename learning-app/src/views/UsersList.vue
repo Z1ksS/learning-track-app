@@ -96,12 +96,38 @@ export default {
             editModalVisible.value = true;
         };
 
-        const updateUser = () => {
-            const userIndex = users.findIndex((user) => user.email === editedUser.email);
-            if (userIndex !== -1) {
-                users[userIndex] = { ...editedUser };
+        const updateUser = async () => {
+            try {
+                // Выполняем PATCH запрос
+                const response = await fetch(`https://localhost:7059/api/User/updateUser?email=${editedUser.email}`, {
+                    method: 'PATCH',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        Authorization: `Bearer ${localStorage.getItem('token')}`,
+                    },
+                    body: JSON.stringify({
+                        name: editedUser.name,
+                        email: editedUser.email,
+                        role: editedUser.role,
+                    }),
+                });
+
+                if (response.ok) {
+                    const updatedUser = await response.json();
+
+                    const userIndex = users.findIndex((user) => user.email === updatedUser.email);
+
+                    if (userIndex !== -1) {
+                        users[userIndex] = updatedUser;
+                    }
+
+                    editModalVisible.value = false;
+                } else {
+                    console.error('Failed to update user:', await response.text());
+                }
+            } catch (error) {
+                console.error('Error during user update:', error);
             }
-            editModalVisible.value = false;
         };
 
         const confirmDelete = (user) => {
@@ -109,12 +135,30 @@ export default {
             deleteModalVisible.value = true;
         };
 
-        const deleteUser = () => {
-            const index = users.findIndex((user) => user.email === userToDelete.value.email);
-            if (index !== -1) {
-                users.splice(index, 1); // Видаляємо користувача зі списку
+        const deleteUser = async () => {
+            try {
+                const response = await fetch(`https://localhost:7059/api/User/deleteUser?email=${userToDelete.value.email}`, {
+                    method: 'DELETE',
+                    headers: {
+                        Authorization: `Bearer ${localStorage.getItem('token')}`,
+                    },
+                });
+
+                if (response.ok) {
+                    // Видаляємо користувача з локального списка
+                    const index = users.findIndex((user) => user.email === userToDelete.value.email);
+
+                    if (index !== -1) {
+                        users.splice(index, 1);
+                    }
+
+                    deleteModalVisible.value = false;
+                } else {
+                    console.error('Failed to delete user:', await response.text());
+                }
+            } catch (error) {
+                console.error('Error during user deletion:', error);
             }
-            deleteModalVisible.value = false;
         };
     
         return {
@@ -140,7 +184,7 @@ export default {
         padding: 20px;
         display: flex;
         flex-direction: column;
-        align-items: center
+        align-items: center;
     }
 
     .users-table {

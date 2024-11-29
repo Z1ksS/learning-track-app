@@ -10,6 +10,9 @@
           <li v-if="!authStore.isAuthenticated">
             <router-link to="/register" class="navbar-link">Register</router-link>
           </li>
+          <li v-if="authStore.userRole === 'User'">
+            <router-link to="/profile" class="navbar-link">Profile</router-link>
+          </li>
           <li v-if="authStore.userRole === 'Admin'">
             <router-link to="/users" class="navbar-link">View Users</router-link>
           </li>

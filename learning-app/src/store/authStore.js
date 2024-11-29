@@ -15,7 +15,7 @@ export const useAuthStore = defineStore('auth', {
       // Розпаковуємо роль з токена
       const decodedToken = jwtDecode(token);
       this.userRole = decodedToken["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
-      this.userEmail = decodedToken["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"]
+      this.userEmail = decodedToken["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"];
     },
     logout() {
       this.isAuthenticated = false;
@@ -30,7 +30,7 @@ export const useAuthStore = defineStore('auth', {
 
         const decodedToken = jwtDecode(token);
         this.userRole = decodedToken["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
-        this.userEmail = decodedToken["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"]
+        this.userEmail = decodedToken["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"];
       }
     }
   },
