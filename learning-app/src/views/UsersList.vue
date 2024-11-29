@@ -32,7 +32,15 @@
                 <option value="User">User</option>
                 <option value="Admin">Admin</option>
             </select>
+            <h3 v-if="errorMessage.value" class="text-error">{{errorMessage.value}}</h3>
             <button @click="updateUser">Save Changes</button>
+        </Modal>
+
+        <!-- Модальне вікно для підтвердження видалення -->
+        <Modal :show="deleteModalVisible.value" @update:show="deleteModalVisible.value = $event">
+            <h2>Are you sure you want to delete this user?</h2>
+            <h3 v-if="errorMessage.value" class="text-error">{{errorMessage.value}}</h3>
+            <button @click="deleteUser">Yes, Delete</button>
         </Modal>
     </div>
 </template>
@@ -48,8 +56,14 @@ export default {
     },
     setup() {
         const users = reactive([]);
+
         const editedUser = reactive({ name: '', email: '', role: '' });
+        const userToDelete = reactive({});
+
         const editModalVisible = reactive({ value: false });
+        const deleteModalVisible = reactive({ value: false });
+
+        const errorMessage = reactive({ value: '' });
 
         const fetchUsers = async () => {
             try {
@@ -81,12 +95,39 @@ export default {
             Object.assign(editedUser, user);
             editModalVisible.value = true;
         };
+
+        const updateUser = () => {
+            const userIndex = users.findIndex((user) => user.email === editedUser.email);
+            if (userIndex !== -1) {
+                users[userIndex] = { ...editedUser };
+            }
+            editModalVisible.value = false;
+        };
+
+        const confirmDelete = (user) => {
+            userToDelete.value = user;
+            deleteModalVisible.value = true;
+        };
+
+        const deleteUser = () => {
+            const index = users.findIndex((user) => user.email === userToDelete.value.email);
+            if (index !== -1) {
+                users.splice(index, 1); // Видаляємо користувача зі списку
+            }
+            deleteModalVisible.value = false;
+        };
     
         return {
             users,
             editModalVisible,
+            deleteModalVisible,
+            editedUser,
+            userToDelete,
             editUser,
-            editedUser
+            updateUser,
+            confirmDelete,
+            deleteUser,
+            errorMessage
         };
     },
 };
@@ -132,6 +173,13 @@ export default {
 
     button:hover {
         color: #00bcd4;
+    }
+
+    .text-error {
+        position: relative;
+        top: 5px;
+        color: #d43c00;
+        font-size: 10px;
     }
 </style>
   

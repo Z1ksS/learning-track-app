@@ -18,6 +18,23 @@ public class UserRepository : IUserRepository
 		await _learningAppDbContext.SaveChangesAsync();
 	}
 
+	public async Task Delete(string email)
+	{
+		var user = await _learningAppDbContext.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Email == email);
+
+		if(user is not null)
+		{
+			_learningAppDbContext.Users.Remove(user);
+			await _learningAppDbContext.SaveChangesAsync();
+		}
+	}
+
+	public async Task Update(User user)
+	{
+		_learningAppDbContext.Users.Update(user);
+		await _learningAppDbContext.SaveChangesAsync();
+	}
+
 	public async Task<IEnumerable<User>> GetAllAsync()
 	{
 		var users = await _learningAppDbContext.Users.ToListAsync();

@@ -103,4 +103,90 @@ public class UserService : IUserService
 
 		return usersDto.ToList();
 	}
+
+	public async Task<Result<UserDto, ApplicationError>> GetUserByEmail(string email)
+	{
+		var isValidEmail = Regex.IsMatch(email, pattern);
+
+		if (!isValidEmail)
+		{
+			return new UserInvalidEmail();
+		}
+
+		var userWithEmailExists = await _userRepository.GetByEmail(email);
+
+		if (userWithEmailExists is null)
+		{
+			return new UserDoesNotExist();
+		}
+
+		var userDto = new UserDto
+		{
+			Name = userWithEmailExists.Name,
+			Email = userWithEmailExists.Email,
+			Role = userWithEmailExists.Role
+		};
+
+		return userDto;
+	}
+
+	public async Task<Result<UserDto, ApplicationError>> UpdateUser(string email, UserDto user)
+	{
+		var isValidEmail = Regex.IsMatch(email, pattern);
+
+		if (!isValidEmail)
+		{
+			return new UserInvalidEmail();
+		}
+
+		var userWithEmailExists = await _userRepository.GetByEmail(email);
+
+		if (userWithEmailExists is null)
+		{
+			return new UserDoesNotExist();
+		}
+
+		var isValidInputedEmail = Regex.IsMatch(user.Email, pattern);
+
+		if (!isValidInputedEmail)
+		{
+			return new UserInvalidEmail();
+		}
+
+		userWithEmailExists.Email = user.Email;
+		userWithEmailExists.Name = user.Name;
+		userWithEmailExists.Role = user.Role;
+
+		await _userRepository.Update(userWithEmailExists);
+
+		var userDto = new UserDto
+		{
+			Name = userWithEmailExists.Name,
+			Email = userWithEmailExists.Email,
+			Role = userWithEmailExists.Role
+		};
+
+		return userDto;
+	}
+
+	public async Task<Result<bool, ApplicationError>> DeleteUser(string email)
+	{
+		var isValidEmail = Regex.IsMatch(email, pattern);
+
+		if (!isValidEmail)
+		{
+			return new UserInvalidEmail();
+		}
+
+		var userWithEmailExists = await _userRepository.GetByEmail(email);
+
+		if (userWithEmailExists is null)
+		{
+			return new UserDoesNotExist();
+		}
+
+		await _userRepository.Delete(email);
+
+		return true;
+	}
 }

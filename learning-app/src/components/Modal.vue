@@ -2,7 +2,7 @@
     <div class="modal-overlay" v-if="show">
       <div class="modal-content">
         <slot></slot> <!-- елемент для контенту модального вікна -->
-        <button @click="close" class="modal-close">Close</button>
+        <button @click="close" class="modal-close">Cancel</button>
       </div>
     </div>
   </template>
@@ -38,7 +38,7 @@
   }
 
   .modal-content {
-    background: white;
+    background-color: #222222;
     padding: 20px;
     border-radius: 5px;
     max-width: 400px;
@@ -48,12 +48,13 @@
 
   .modal-close {
     margin-top: 20px;
-    background-color: #d43c00;
+    background-color: transparent;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    color: #d43c00;
   }
 </style>
   
